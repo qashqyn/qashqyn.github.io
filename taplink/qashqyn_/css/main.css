@@ -1,12 +1,34 @@
 body{
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
+	font-size: inherit;
+	font-weight: 400;
 }
 img{
 	border-radius: 50%;
 }
 a{
 	text-decoration:none;
+	color: inherit;
+}
+span{
+	font-weight: 700;
+}
+
+svg{
+	fill: white;
+}
+
+.footer{
+	color: black;
+	font-size: 14px;
+	opacity: .7;
+}
+.footer:hover{
+	opacity: 1;
+}
+.row{
+	padding: 7px 14px;
 }
 /*image sizes*/
 img.small{
