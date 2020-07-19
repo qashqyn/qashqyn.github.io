@@ -1,4 +1,5 @@
 body{
+	background-color: #eff2f7;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-size: inherit;
@@ -16,9 +17,14 @@ span{
 }
 
 svg{
+	vertical-align: middle;
 	fill: white;
+	margin: 0 10px;
 }
-
+.text{
+	display: inline;
+	vertical-align: middle;
+}
 .footer{
 	color: black;
 	font-size: 14px;
@@ -49,14 +55,19 @@ img.very_big{
 }
 
 /*block styles*/
+link-subtitle{
+	opacity: .7;
+	font-size: 90%;
+}
 .dark{
 	background-color: #3d3b3c;
 	color: white;
 	font-size: 16;
 }
-.dark.link-subtitle{
-	opacity: .7;
-	font-size: 90%;
+.darkblue{
+	background-color: #187bcd;
+	color: white;
+	font-size: 16;
 }
 
 /*block*/
