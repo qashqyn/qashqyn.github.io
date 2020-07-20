@@ -69,6 +69,11 @@ link-subtitle{
 	color: white;
 	font-size: 16;
 }
+.red{
+	background-color: #c21807;
+	color: white;
+	font-size: 16;
+}
 
 /*block*/
 .block{
