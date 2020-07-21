@@ -1,0 +1,30 @@
+*{
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #272625;
+}
+.header{
+	position: fixed;
+	padding: 20px;
+
+	display: block;
+}
+.signup-button{
+	background-color: #3c3c3d;
+	border-radius: 10px;
+
+	color: white;
+	opacity: 1;
+
+	padding: 13px 20px;
+}
+.content{
+	text-align: center;
+}
+h1{
+	color: white;
+}
