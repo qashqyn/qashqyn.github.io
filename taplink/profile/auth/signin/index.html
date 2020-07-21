@@ -11,9 +11,23 @@
 		<h1>Авторизация</h1>
 		<div>
 			<form>
-				<div></div>
-				<div></div>
-				<button type="submit"></button>
+				<div class="feild">
+					<label>Электронная почта</label>
+					<div>
+						<input type="email" autocomplete="on" tabindex="1" autofocus="autofocus">
+					</div>
+				</div>
+				<div class="feild">
+					<div class="password-label">
+						<label>Пароль</label>
+						<a href="/profile/auth/restore/" class="restore-password">Забыли пороль?</a>
+					</div>
+					<div>
+						<input type="password" autocomplete="on" tabindex="2">
+						<span class="icon"></span>
+					</div>
+				</div>
+				<button type="submit">Войти</button>
 			</form>
 		</div>
 	</div>
