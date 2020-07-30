@@ -1,16 +1,18 @@
 :root{
-	--color1: #151515;
-	--color2: #0a0a0a;
+	--color1: #111f2c;
+	--color2: #2f576e;
 	--color3: #fbfcd4;
-	--color4: #ffd300;
-	--color5: #fbc403;
+	--color4: #fff;
+	--color5: #111f2c;
 }
 *{
-	color: var(--color4);
+	color: var(--color1);
 	font-family: 'Roboto', sans-serif;
 }
 body{
-	background-color: var(--color2);
+	background-color: white;
+	margin: 0;
+	padding: 0;
 }
 a{
 	text-decoration: none;
@@ -18,46 +20,100 @@ a{
 ul{
 	list-style-type: none;
 }
-svg{
-	fill: var(--color2);
-	width: 50px;
-	height: 50px;
-	background-color: var(--color4);
+p{
+	padding: 0;
+	margin: 0;
+}
+h1{
+	padding: 0;
+	margin: 0;
 }
 /*Header*/
 header{
+	z-index: 1;
+	display: flex;
+	background-color: white;
 	position: fixed;
 	width: 100%;
 }
 header ul{
-	padding: 0;
-	margin: 0;
+	display: inline;
+	padding: 20px;
+	margin: 0 auto;
 }
 header ul li{
 	display: inline;
 	padding: 0;
-	margin: 0;
+	margin: 0 10px;
+
 }
 .nav{
 	display: inline;
 	padding: 20px 10px;
 	margin: 0;
 }
-.nav:hover{
+.nav:hover, .active{
+	color: white;
 	background-color: var(--color1);
 }
-.active{
-	background-color: var(--color1);	
+
+main{
+	margin: 0;
+	padding: 0;
+}
+/*Home*/
+#home{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+#home .content{
+	width: 50%; 
+}
+#home .content h1{
+
+}
+#home .content p{
+	margin: 10px;
+}
+.CV{
+	margin: 10px; 
+	padding: 10px 50px;
+	background-color: var(--color4);
+	color: var(--color2);
+}
+#home .portrait{
+	width: 50%;
 }
 /*Network*/
-.network ul li{
-
+#network{
+	position: absolute;
+	bottom: 0;
 }
-.net-link{
-
+#network ul{
+	margin: 0 0 0 10px;
+	padding: 0;
 }
-.net-link
-/*Home*/
-.home{
-
+#network ul li{
+	display: inline;
+	margin: 10px 0;
+	padding: 0;
+}
+#network ul li:hover{
+	box-shadow: 3px 3px 1px var(--color5);
+}
+svg{
+	fill: var(--color2);
+	width: 50px;
+	height: 50px;
+	background-color: var(--color4);
+}
+svg:hover{
+	fill: var(--color1);
+}
+/*About*/
+#about{
+	background-color: var(--color2);
+	height: 100vh;
 }
