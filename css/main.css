@@ -120,4 +120,24 @@ svg:hover{
 #about{
 	background-color: var(--color2);
 	height: 100vh;
+	display: flex;
 }
+#about .content{
+	margin-top: 200px;
+	margin-right: 100px;
+	width: calc(50% - 100px);
+}
+#about .content h1{
+	margin: 0;
+	color: var(--color4);	
+}
+#about .content h2{
+	color: var(--color4);
+}
+#about .content p{
+	color: var(--color6);
+}
+#about .portrait{
+	width: 50%;
+}
+/*Services*/
