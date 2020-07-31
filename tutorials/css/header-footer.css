@@ -40,12 +40,23 @@ a{
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+	header{
+		padding: 20px;
+		text-align: left;
+	}
+	#header-logo{
+		font-size: 20pt;
+		color: var(--color3);
+		font-weight: bold;
+	}
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	header{
 		padding: 20px;
+		text-align: left;
 	}
 	#header-logo{
 		font-size: 20pt;
@@ -55,4 +66,14 @@ a{
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 1200px) {
+	header{
+		padding: 20px;
+		text-align: left;
+	}
+	#header-logo{
+		font-size: 20pt;
+		color: var(--color3);
+		font-weight: bold;
+	}
+}
