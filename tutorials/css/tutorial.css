@@ -16,7 +16,51 @@ a{
 @media only screen and (max-width: 600px) {...}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {
+	body{
+		padding: 0;
+		margin: 0;
+		background-color: var(--color6);
+	}
+	main{
+		display: block;
+	}
+	#sidenav{
+		background-color: var(--color6);
+		position: absolute;
+		padding: 0;
+		margin: 0;
+		width: 250px;
+		overflow: auto;
+		height: 100%;
+		z-index: 1;
+	}
+	#sidenav h2{
+		margin: 0;
+		padding: 10px 20px;
+		display: block;
+		color: var(--color1);
+	}
+	#sidenav a{
+		padding: 10px 20px;
+		display: block;
+		color: var(--color1);
+	}
+	#sidenav a:hover, #sidenav a.active{
+		background-color: var(--color2);
+		color: var(--color6);
+	}
+	#content{
+		display: block;
+	}
+	
+	#content h1, #content h2, #content p, #content ul{
+		color: var(--color1);
+	}
+	.comment{
+		opacity: .7;
+	}
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {...}
@@ -36,7 +80,10 @@ a{
 		margin: 0;
 		width: 250px;
 		overflow: auto;
-		height: 100vh;
+		background-color: var(--color6);
+		position: fixed;
+		height: 100%;
+		z-index: 1;
 	}
 	#sidenav h2{
 		margin: 0;
@@ -55,7 +102,7 @@ a{
 	}
 	#content{
 		display: block;
-		max-width: calc(100% - 250px);
+		margin-left: 250px; 
 	}
 	
 	#content h1, #content h2, #content p, #content ul{
