@@ -57,6 +57,10 @@ a{
 		display: block;
 		max-width: calc(100% - 250px);
 	}
+	
+	#content h1, #content h2, #content p, #content ul{
+		color: var(--color1);
+	}
 	.comment{
 		opacity: .7;
 	}
