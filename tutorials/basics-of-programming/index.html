@@ -7,9 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="../css/tutorial.css">
 	<link rel="stylesheet" type="text/css" href="../css/header-footer.css">
 	<link rel="icon" type="image/x-icon" href="/favicon96.ico">
+	<script src="../js/main.js"></script>
 </head>
 <body>
 	<header>
+		<a href="javascript:void(0);" id="hamburger" onclick="hamburger()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+		</a>
 		<a href="../index.html"><div id="header-logo">QASHQYN EDUCATION</div></a>
 	</header>
 	<main>
@@ -17,6 +21,7 @@
 			<h2>Основы Программирования</h2>
 			<a href="" class="active">Введение</a>
 			<a href="computer.html">Компьютер</a>
+			
 		</div>
 		<div id="content">
 			<div style="margin:30px 20px;">
@@ -32,5 +37,15 @@
 		</div>
 	</main>
 	<footer></footer>
+	<script>
+		function hamburger() {
+			var x = document.getElementById("sidenav");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+			    x.style.display = "block";
+			}
+		}
+	</script>
 </body>
 </html>
