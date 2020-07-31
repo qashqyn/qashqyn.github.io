@@ -13,7 +13,33 @@ a{
 	text-decoration: none;
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+body{
+		background-color: var(--color6);
+		margin: 0;
+	}
+	main{
+		display: block;
+	}
+	.container{
+		display: block;
+		margin: 20px;
+	}
+	.tutorial-card{
+		display: block;
+		height: 300px;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+		padding: 20px;
+	}
+	.tutorial-card:hover{
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	}
+	.tutorial-heading{
+		color: var(--color1);
+		font-size: 4em;
+	}
+	.tutorial-p{
+		color: var(--color2);
+	}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {...}
@@ -28,9 +54,6 @@ a{
 		margin: 0;
 	}
 	main{
-		display: flex;
-	}
-	#rigth{
 		display: flex;
 	}
 	.container{
@@ -54,6 +77,6 @@ a{
 		color: var(--color2);
 	}
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+/*
+ Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}*/
