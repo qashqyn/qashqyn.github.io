@@ -53,6 +53,13 @@ a{
 		background-color: var(--color2);
 		color: var(--color6);
 	}
+	#content{
+		display: block;
+		max-width: calc(100% - 250px);
+	}
+	.comment{
+		opacity: .7;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
