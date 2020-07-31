@@ -25,15 +25,20 @@ a{
 @media only screen and (min-width: 992px) {
 	body{
 		background-color: var(--color6);
+		margin: 0;
 	}
 	main{
 		display: flex;
 	}
+	#rigth{
+		display: flex;
+	}
 	.container{
 		display: inline-block;
-		margin: 10px;
+		margin: 20px;
 	}
 	.tutorial-card{
+		display: block;
 		width: 300px;
 		height: 200px;
 		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
