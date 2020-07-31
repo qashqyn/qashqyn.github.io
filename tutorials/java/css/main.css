@@ -1,0 +1,54 @@
+:root{
+	--color1: #111f2c; /*darlblue*/
+	--color2: #2f576e;	/*blue*/
+	--color3: #d2963b;	/*golden*/
+	--color4: #e8ca82;	/*lightgolden*/
+	--color5: #211f21;	/*darkbrown*/
+	--color6: white; 
+}
+*{
+	font-family: 'Roboto', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	body{
+		background-color: var(--color6);
+	}
+	main{
+		display: flex;
+	}
+	.container{
+		display: inline-block;
+		margin: 10px;
+	}
+	.tutorial-card{
+		width: 300px;
+		height: 200px;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+		padding: 20px;
+	}
+	.tutorial-card:hover{
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	}
+	.tutorial-heading{
+		color: var(--color1);
+	}
+	.tutorial-p{
+		color: var(--color2);
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
