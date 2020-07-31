@@ -14,32 +14,31 @@ a{
 }
 /* Extra small devices (phones, 600px and down) */
 body{
-		background-color: var(--color6);
-		margin: 0;
-	}
-	main{
-		display: block;
-	}
-	.container{
-		display: block;
-		margin: 20px;
-	}
-	.tutorial-card{
-		display: block;
-		height: 300px;
-		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-		padding: 20px;
-	}
-	.tutorial-card:hover{
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	}
-	.tutorial-heading{
-		color: var(--color1);
-		font-size: 4em;
-	}
-	.tutorial-p{
-		color: var(--color2);
-	}
+	background-color: var(--color6);
+	margin: 0;
+}
+main{
+	display: block;
+}
+.container{
+	display: block;
+	margin: 20px;
+}
+.tutorial-card{
+	display: block;
+	height: 300px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+}
+.tutorial-card:hover{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.tutorial-heading{
+	color: var(--color1);
+}
+.tutorial-p{
+	color: var(--color2);
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {...}
