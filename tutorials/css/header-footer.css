@@ -12,61 +12,19 @@
 a{
 	text-decoration: none;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
 	header{
 		padding: 20px;
 		text-align: center;
 	}
 	#header-logo{
+		display: inline-block;
 		font-size: 20pt;
 		color: var(--color3);
 		font-weight: bold;
 	}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-	header{
-		padding: 20px;
-		text-align: center;
-	}
-	#header-logo{
-		font-size: 20pt;
-		color: var(--color3);
-		font-weight: bold;
-	}
-}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	header{
-		padding: 20px;
-		text-align: left;
-	}
-	#header-logo{
-		font-size: 20pt;
-		color: var(--color3);
-		font-weight: bold;
-	}
-}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	header{
-		padding: 20px;
-		text-align: left;
-	}
-	#header-logo{
-		font-size: 20pt;
-		color: var(--color3);
-		font-weight: bold;
-	}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 	header{
 		padding: 20px;
 		text-align: left;
