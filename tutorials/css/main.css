@@ -19,6 +19,8 @@ a{
 		margin: 0;
 	}
 	main{
+		position: absolute;
+		top: 70px;
 		display: block;
 	}
 	.container{
@@ -50,6 +52,8 @@ a{
 		margin: 0;
 	}
 	main{
+		position: absolute;
+		top: 70px;
 		display: flex;
 	}
 	.container{
