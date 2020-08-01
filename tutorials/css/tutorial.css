@@ -73,6 +73,7 @@ a{
 		opacity: .7;
 	}
 	img{
+		padding: 20px;
 		position: relative;
 		left: 50%;
 		transform: translate(-50%, 0);
