@@ -77,8 +77,13 @@ a{
 		position: relative;
 		left: 50%;
 		transform: translate(-50%, 0);
-		width: 70vw;
-		max-width: 500px;
+		width: 90%;
+	}
+	.cmd{
+		font-family: Consolas,"courier new";
+		padding: 8px 12px;
+		color: white;
+		background-color: black;
 	}
 
 /* Large devices (laptops/desktops, 992px and up) */
