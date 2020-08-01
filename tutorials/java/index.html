@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Java Intro</title>
+	<title>Введение | Java для начинающих</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/tutorial.css">
@@ -10,6 +10,9 @@
 </head>
 <body>
 	<header>
+		<a href="javascript:void(0);" id="hamburger" onclick="hamburger()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+		</a>
 		<a href="../index.html"><div id="header-logo">QASHQYN EDUCATION</div></a>
 	</header>
 	<main>
@@ -19,11 +22,24 @@
 			<a href="">Начало</a>
 		</div>
 		<div id="content">
-			<h1>Введение в Java</h1>
-			<h2>Что такое</h2>
-			<p></p>
+			<div style="margin: 30px 20px;">
+				<h1>Введение в Java</h1>
+				<h2>Что такое Java?</h2>
+				<p>Java - это популярный язык программирования, созданный в 1995 году.<br> Назван в честь марки кофе Java, поэтому на официальной эмблеме языка изображена чашка с горячим кофе.</p>
+				<img src="images/Java-logo.png" alt="Логотип Java">
+			</div>
 		</div>
 	</main>
 	<footer></footer>
+	<script>
+		function hamburger() {
+			var x = document.getElementById("sidenav");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+			    x.style.display = "block";
+			}
+		}
+	</script>
 </body>
 </html>
