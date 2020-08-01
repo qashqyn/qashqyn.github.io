@@ -35,37 +35,7 @@ a{
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	}
 	.tutorial-heading{
-		color: var(--color1);
-	}
-	.tutorial-p{
-		color: var(--color2);
-	}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	body{
-		background-color: var(--color6);
-		margin: 0;
-	}
-	main{
-		display: flex;
-	}
-	.container{
-		display: inline-block;
-		margin: 20px;
-	}
-	.tutorial-card{
-		display: block;
-		width: 300px;
-		height: 200px;
-		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-		padding: 20px;
-	}
-	.tutorial-card:hover{
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	}
-	.tutorial-heading{
+		font-size: 1.8em;
 		color: var(--color1);
 	}
 	.tutorial-p{
@@ -97,6 +67,7 @@ a{
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	}
 	.tutorial-heading{
+
 		color: var(--color1);
 	}
 	.tutorial-p{
