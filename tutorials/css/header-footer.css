@@ -13,13 +13,23 @@ a{
 	text-decoration: none;
 }
 	header{
+		top: 0;
+		position: fixed;
+		background-color: var(--color2);
 		padding: 20px;
 		text-align: center;
+		width: 100%;
+		display: block;
+		height: 30px;
+		z-index: 1;
 	}
 	#header-logo{
-		display: inline-block;
+		left: 50%;
+		transform: translate(-50%, 0);
+		position: absolute;
+		display: block;
 		font-size: 20pt;
-		color: var(--color3);
+		color: var(--color6);
 		font-weight: bold;
 	}
 
@@ -30,8 +40,11 @@ a{
 		text-align: left;
 	}
 	#header-logo{
+		position: initial;
+		transform: initial;
+		left: initial;
 		font-size: 20pt;
-		color: var(--color3);
+		color: var(--color6);
 		font-weight: bold;
 	}
 }
