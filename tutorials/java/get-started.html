@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Введение | Java для начинающих</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/tutorial.css">
+	<link rel="stylesheet" type="text/css" href="../css/header-footer.css">
+	<link rel="icon" type="image/x-icon" href="/favicon96.ico">
+</head>
+<body>
+	<header>
+		<a href="javascript:void(0);" id="hamburger" onclick="hamburger()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+		</a>
+		<a href="../index.html"><div id="header-logo">QASHQYN EDUCATION</div></a>
+	</header>
+	<main>
+		<div id="sidenav">
+			<h2>Java</h2>
+			<a href="index.html">Введение</a>
+			<a href="" class="active">Начало</a>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 20px;">
+				<h1>Начало</h1>
+				<h2>Установка Java</h2>
+				<p>Для начало скачайте последнию версию Java c <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">www.oracle.com</a></p>
+				<p><strong>Внимание:</strong> Скачайте Oracle JDK(Java Development Kit)</p>
+				<img src="images/Java-logo.png" alt="Логотип Java">
+				<p>Java используется для:</p>
+				<ul>
+					<li>Мобильные приложения (особенно приложения для Android)</li>
+					<li>Настольные приложения</li>
+					<li>Веб-приложения</li>
+					<li>Веб-серверы</li>
+					<li>Игры</li>
+					<li>Подключение к базе данных</li>
+					<li>И многое, многое другое!</li>
+				</ul>
+				<h2>Почему Java?</h2>
+				<p>Java - это объектно-ориентированный язык, который дает четкую структуру программам и позволяет повторно использовать код, снижая затраты на разработку.</p>
+				<p>Один из самых популярных языков программирования в мире.</p>
+				<p>Легко учиться и прост в использовании.</p>
+				<p>Поскольку Java близка к C++ и C#, она позволяет программистам легко переключаться на Java или наоборот.</p>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+	<script>
+		function hamburger() {
+			var x = document.getElementById("sidenav");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+			    x.style.display = "block";
+			}
+		}
+	</script>
+</body>
+</html>
