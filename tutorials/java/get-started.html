@@ -27,22 +27,23 @@
 				<h2>Установка Java</h2>
 				<p>Для начало скачайте последнию версию Java c <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">www.oracle.com</a></p>
 				<p><strong>Внимание:</strong> Скачайте Oracle JDK(Java Development Kit)</p>
-				<img src="images/Java-logo.png" alt="Логотип Java">
-				<p>Java используется для:</p>
-				<ul>
-					<li>Мобильные приложения (особенно приложения для Android)</li>
-					<li>Настольные приложения</li>
-					<li>Веб-приложения</li>
-					<li>Веб-серверы</li>
-					<li>Игры</li>
-					<li>Подключение к базе данных</li>
-					<li>И многое, многое другое!</li>
-				</ul>
-				<h2>Почему Java?</h2>
-				<p>Java - это объектно-ориентированный язык, который дает четкую структуру программам и позволяет повторно использовать код, снижая затраты на разработку.</p>
-				<p>Один из самых популярных языков программирования в мире.</p>
-				<p>Легко учиться и прост в использовании.</p>
-				<p>Поскольку Java близка к C++ и C#, она позволяет программистам легко переключаться на Java или наоборот.</p>
+				<img src="images/oracle-download.png" alt="Скачайте Oracle JDK">
+				<p>Запустите загруженный файл и установите как любую другую программу.</p>
+				<p>Если у вас Windows то для вас еще ничего не окончено, если же нет то можете пропустить следующий этап.</p>
+				<h2>Установка для Windows</h2>
+				<p>Перейдити в <strong>Cвойства системы</strong> (Панель Управления > Система и безопасность > Система > Дополнительные параметры системы)</p>
+				<img src="images/system.png" alt="Система">
+				<p>Нажмите кнопку <strong>Переменные среды</strong> под вкладкой <strong>Дополнительно</strong></p>
+				<img src="images/system-propertyes.png" alt="Cвойства системы">
+				<p>Выберите переменную <strong>Path</strong> в системных переменных и нажмите кнопку <strong>Edit</strong></p>
+				<img src="images/environment-variables.png" alt="Переменные среды">
+				<p>Нажмите на кнопку <strong>Создать</strong> и добавьте путь, где установлена Java, а затем \bin. По умолчанию Java устанавливается в C:\Program Files\Java\jdk-14.0.2 (если при установке ничего не было указано).<br>Затем нажмите «ОК» и сохраните настройки</p>
+				<img src="images/edit-environment-variable.png" alt="Cвойства системы">
+				<p>Наконец, откройте командную строку (cmd.exe) и введите <strong>java -version</strong>, чтобы увидеть, работает ли Java на вашем компьютере.</p>
+				<p>Введите в командной строке следующее (cmd.exe):</p>
+				<div class="cmd">C:\Users\Your Name>java -version</div>
+				<p>Если Java была успешно установлена, вы увидите что-то вроде этого (в зависимости от версии):</p>
+				<div class="cmd">java version "11.0.1" 2018-10-16 LTS<br>Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)<br>Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)</div>
 			</div>
 		</div>
 	</main>
