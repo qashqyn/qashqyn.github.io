@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
 :root{
 	--color1: #111f2c; /*darlblue*/
 	--color2: #2f576e;	/*blue*/
@@ -90,6 +92,12 @@ a{
 		color: white;
 		background-color: black;
 	}
+	pre[class*="language-"]{
+		padding: 1em;
+		background-color: white;
+		font-family: Consolas, 'Source Code Pro', Menlo, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
