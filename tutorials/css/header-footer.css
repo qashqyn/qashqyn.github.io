@@ -28,7 +28,7 @@ a{
 		transform: translate(-50%, 0);
 		position: absolute;
 		display: block;
-		font-size: 20pt;
+		font-size: 1.5em;
 		color: var(--color6);
 		font-weight: bold;
 	}
@@ -43,7 +43,7 @@ a{
 		position: initial;
 		transform: initial;
 		left: initial;
-		font-size: 20pt;
+		font-size: 2em;
 		color: var(--color6);
 		font-weight: bold;
 	}
