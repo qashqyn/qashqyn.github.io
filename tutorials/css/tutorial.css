@@ -72,14 +72,19 @@ a{
 	.comment{
 		opacity: .7;
 	}
-	img{
-		padding: 20px;
-		position: relative;
-		left: 50%;
-		transform: translate(-50%, 0);
-		width: 90%;
+	.example{
+		background-color: lightgray;
+		padding: 20px 30px;
+		width: calc(100% - 60px);
+		text-align: left;
 	}
-	.cmd{
+	img{
+		padding: 0;
+		position: relative;
+		width: 100%;
+		background-color: white!important;
+	}
+	.cmd-code{
 		font-family: Consolas,"courier new";
 		padding: 8px 12px;
 		color: white;
