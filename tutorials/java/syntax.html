@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Введение | Java для начинающих</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/tutorial.css">
+	<link rel="stylesheet" type="text/css" href="../css/header-footer.css">
+	<link rel="icon" type="image/x-icon" href="/favicon96.ico">
+</head>
+<body>
+	<header>
+		<a href="javascript:void(0);" id="hamburger" onclick="hamburger()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+		</a>
+		<a href="../index.html"><div id="header-logo">QASHQYN EDUCATION</div></a>
+	</header>
+	<main>
+		<div id="sidenav">
+			<h2>Java</h2>
+			<a href="index.html">Введение</a>
+			<a href="get-started.html">Начало</a>
+			<a href="" class="active">Синтакс</a>
+		</div>
+		<div id="content">
+			<div style="margin: 30px 20px;">
+				<h1>Синтакс языка Java</h1>
+				<h2>Синтакс</h2>
+				<p>В предыдущей главе мы создали файл Java с именем <strong>MyClass.java</strong> и использовали следующий код для вывода на экран "Hello World":</p>
+				<div class="example">
+					<p style="margin-top: 0;">MyClass.java</p>
+					<pre class="language-java"><code>public class MyClass{
+	public static void main(String[] args){
+		System.out.println("Hello World!");
+	}
+}</code></pre>
+				</div>
+				<h3>Объяснение примера</h3>
+				<p>Каждая строка кода, которая выполняется в Java, должна быть внутри класса. В нашем примере мы назвали класс MyClass. Класс всегда должен начинаться с заглавной первой буквы.</p>
+				<p><strong>Внимание:</strong> Java чувствительна к регистру: "MyClass" и "myclass" имеют различные значение.</p>
+				<p>Имя java файла должно совпадать с именем класса. При сохранении файла сохраните его, используя имя класса, и добавьте ".java" в конец имени файла. Чтобы запустить приведенный выше пример на своем компьютере, убедитесь, что Java установлена правильно: Перейдите к главе <a href="get-started.html">Начало</a>, чтобы узнать, как установить Java. На выводе у вас должно быть:</p>
+				<div class="example">
+					<div class="cmd-code">Hello World</div>
+				</div>
+				<h2>Метод main</h2>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+	<script>
+		function hamburger() {
+			var x = document.getElementById("sidenav");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+			    x.style.display = "block";
+			}
+		}
+	</script>
+</body>
+</html>
