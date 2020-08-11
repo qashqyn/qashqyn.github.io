@@ -56,17 +56,22 @@
 			</div>
 		</div>
 		<div id="services">
-			<div class="cart">
+			<div class="cart fade">
 				<img src="img/cart-image1.png">
 				Перевозка, сборка, разборка мебели в Нур-Султане (Астане)
 			</div>
-			<div class="cart">
+			<div class="cart  fade">
 				<img src="img/cart-image2.png">
 				Транспортировка строительного материала, мусора по Астане и РК
 			</div>
-			<div class="cart">
+			<div class="cart  fade">
 				<img src="img/cart-image3.png">
 				Услуги грузчиков в Нур-Султане(Астана)
+			</div>
+			<div style="text-align:center">
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+				<span class="dot"></span> 
 			</div>
 		</div>
 		<div id="block1">
@@ -99,7 +104,7 @@
 						<path d="M1 1L24.0881 13L47 1" stroke="#16191E"/>
 					</svg>	
 				</div>
-				<img src="img/img1.png" style="width: 25vw;">
+				<img src="img/img1.png" style="width: 90%;">
 			</div>
 			<div class="right">
 				<div class="block">
@@ -171,7 +176,7 @@
 				<img src="img/map.png" style="border-radius: 11px;">
 				<p><strong>Ждем Вашего отзыва ниже о транспортной компании</strong></p>
 				<form>
-					<div style="display: flex; margin-bottom: 30px;">
+					<div class="labels" >
 						<div style="display: inline-block; margin-right: 100px">
 							<label for="form-name">Имя</label>	
 							<input type="text" name="name" id="form-name" placeholder="Введите ваше имя">
@@ -202,6 +207,25 @@
 		</div>
 	</footer>
 	<script>
+		var slideIndex = 0;
+		showSlides();
+		function showSlides() {
+			if (window.innerWidth < 992){	
+		  		var i;
+		  		var slides = document.getElementsByClassName("cart");
+		  		var dots = document.getElementsByClassName("dot");
+		  		for (i = 0; i < slides.length; i++) 
+		    		slides[i].style.display = "none";  
+		  		slideIndex++;
+		  		if (slideIndex > slides.length) {slideIndex = 1}    
+		  		for (i = 0; i < dots.length; i++) 
+		    		dots[i].className = dots[i].className.replace(" active", "");
+		  		slides[slideIndex-1].style.display = "block";  
+		  		dots[slideIndex-1].className += " active";
+		  		setTimeout(showSlides, 2000); // Change image every 2 seconds
+		  	}
+		}
+
 		function scrollUp() {
 			document.getElementById('city-list').scrollBy(0,-57);
 		}
