@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
 body{
 	margin: 0;
@@ -10,6 +11,42 @@ a{
 	text-decoration: none;
 	color: inherit;
 }
+p{
+	font-size: 18px;
+}
+#soc-net{
+	margin-left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	position: fixed;
+	text-align: center;
+}
+.vl {
+	margin: 12px auto;
+  	border-left: 2px solid gray;
+  	width: 0;
+  	height: 25vh;
+}
+#soc-net a{
+	display: block;
+	margin: 12px;
+	text-align: center;
+	vertical-align: middle; 
+}
+#soc-net a:hover{
+	margin: -3px;
+	height: 30px;
+}
+#soc-net a svg{
+	width: auto;
+	height: 24px;
+	fill: gray;
+	vertical-align: middle;
+}
+#soc-net a svg:hover{
+	width: auto;
+	height: 30px;
+}
 #home{
 	background-image: linear-gradient(to right,rgba(0,0,0,1), rgba(0,0,0,0)), url("../img/home-background.png");
 	background-repeat: no-repeat;
@@ -18,31 +55,47 @@ a{
 	height: 100vh;
 }
 #header{
+	position: relative;
+	text-align: right;
+	margin: 0 70px;
 	padding-top: 46px;
 	color: #fff;
 }
+#logo-small{
+	margin: auto;
+	margin-left: 0;
+	position: absolute;
+	left: 0;
+	vertical-align: middle;
+	width: 70px;
+}
 .tell-num{
+	margin: auto;
+	vertical-align: middle;
 	margin-right: 12px;
 	color: #fff;
 	text-decoration: none;
 }
 .free-cons{
+	margin: auto;
+	vertical-align: middle;
 	margin-left: 12px;
 	color: #fff;
 	text-decoration: none;
 }
 .content{
+	margin-top: 150px;
 	margin-left: 12vw;
 	width: auto;
 }
 .home-header{
+	font-family: 'Montserrat', sans-serif;
 	color: #fff;
 	font-weight: 400;
 	font-size: 48px;
 }
 .contact-button{
-	height: 40px;
-	width: 175px;
+	padding: 12px 25px;
 	background-color: #fff;
 	color: #000;
 	border-width: 0;
@@ -62,6 +115,7 @@ a{
 
 }
 .cart{
+	display: inline-block;
 	width: 267px;
 	margin: auto; 
 	height: 363px;
@@ -78,11 +132,10 @@ a{
 	margin-bottom: 15px;
 }
 
-#block1{
+#block1, #block2{
 	margin: 29px 70px; 
 	display: flex;
 }
-
 #cities{
 	text-align: center;
 }
@@ -108,7 +161,7 @@ a{
 #city-list li.active, #city-list li:hover{
 	color: #C03C3F;
 }
-.right{
+#block1 .right{
 	margin-left: 70px;
 	border-radius: 11px;
 	background-color: #E9E9E9;
@@ -119,4 +172,80 @@ a{
 }
 .block .icon{
 	margin-right: 29px;
+}
+#block2 .left{
+	width: 50%;
+	margin: 0 auto auto 0;
+}
+#block2 .right{
+	margin: 0 0 auto auto;
+	text-align: center;
+}
+form{ 
+	text-align: initial;
+	background-color: #E9E9E9;
+	padding: 30px 50px;
+	border-radius: 11px;
+}
+label{
+	display: block;
+	font-size: 11pt;
+	font-weight: 400;
+}
+input{
+	display: block;
+	font-size: 10pt;
+	font-weight: 400;
+
+	padding: 13px 15px;
+
+	border-width: 0;
+	border-radius: 11px;
+}
+input:focus{
+	outline: none;
+}
+textarea{
+	width: calc(100% - 30px);
+	height: 160px;
+	resize: none;
+	padding: 13px 15px;
+	border-width: 0;
+	border-radius: 11px;
+}
+textarea:focus{
+	outline: none;
+}
+#form-submit{
+	background-color: white;
+	border-radius: 11px;
+	margin-top: 40px;
+	font-weight: 600;
+	font-size: 14px;
+}
+footer{
+	display: flex;
+	color: white;
+	padding: 29px 70px; 
+	background-color: #4E4E4E;
+	vertical-align: middle;
+}
+#logo-medium{
+	margin: auto;
+	margin-left: 0;
+	vertical-align: middle;
+	height: 76px;
+	width: 125px;
+}
+.val-mid{
+	margin: auto;
+	margin-right: 0;
+	vertical-align: middle;
+}
+.fs-14{
+	font-size: 14px;
+}
+.val-mid .contact-button{
+	padding: 8px 30px;
+	border-radius: 11px;
 }
