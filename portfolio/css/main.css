@@ -1,143 +1,251 @@
-:root{
-	--color1: #111f2c;
-	--color2: #2f576e;
-	--color3: #d2963b;
-	--color4: #e8ca82;
-	--color5: #211f21;
-	--color6: white; 
-}
 *{
-	color: var(--color1);
 	font-family: 'Roboto', sans-serif;
-}
-body{
-	background-color: var(--color6);
-	margin: 0;
-	padding: 0;
 }
 a{
 	text-decoration: none;
 }
-ul{
-	list-style-type: none;
+body{
+	margin: 0;
+	top: 0;
+	padding: 0;
 }
-/*Header*/
-header{
-	z-index: 1;
-	display: flex;
-	background-color: var(--color6);
+
+#menubar{
+	top: 0;
+	left: 0;
 	position: fixed;
 	width: 100%;
+	color: white;
+	user-select: none;
 }
-header ul{
-	display: inline;
-	padding: 20px;
-	margin: 0 auto;
-}
-header ul li{
-	display: inline;
-	padding: 0;
-	margin: 0 10px;
-
-}
-#logo, #lang{
-	text-align: center;
-	display: inline;
-	font-weight: bold;
-	padding: 20px;
-}
-.nav{
-	display: inline;
-	padding: 20px 10px;
-	margin: 0;
-}
-.nav:hover, .active{
-	color: var(--color6);
-	background-color: var(--color1);
-}
-
-main{
-	margin: 0;
-	padding: 0;
-}
-/*Home*/
-#home{
+#logobar{
+	background-color: black;
 	display: flex;
-	margin: 0;
-	padding: 0;
-	height: 100vh;
+	width: 100%;
 }
-#home .content{
-	margin-top:200px;
-	margin-left:150px; 
-	width: 50%; 
+#logo{
+	color: white;
+	margin: 10px auto 10px 20px;
 }
-#home .content h1{
-	margin-top: 0;
-	margin-bottom: 0;
+#hamburger{
+	margin: 10px 20px 10px auto;
+	cursor: pointer;
 }
-#home .content h1 span{
-	color: var(--color3);
+#hamburger svg{
+	fill: white;
 }
-#home .content p{
-	margin: 8px 0; 
+#hamburger svg:hover{
+	fill: gold;
 }
-.CV{
-	display: inline-block;
-	margin-top: 10px;
-	padding: 10px 50px;
-	background-color: var(--color1);
-	color: var(--color6);
+#downbar{
 }
-#home .portrait{
-	width: 50%;
+#navbar{
+	width: 100%;
+	background-color: black;
+	opacity: 0;
+	display: flex;
+	transition: all 200ms ease-in;
 }
-/*Network*/
-#network{
+#navbar.hide{
+	opacity: 1;
+}
+#navbar a{
+	position: relative;
+	color: white;
+	margin: auto;
+	width: 50px;
+	height: 50px;
+}
+.nav-icon{
 	position: absolute;
-	left: 150px;
-	bottom: 5%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 1;
+	transition: opacity 200ms ease-in;
 }
-#network ul{
-	margin: 0;
-	padding: 0;
+.nav-icon.hide{
+	opacity: 0;
 }
-#network ul li{
-	display: inline;
-	margin: 10px 0;
-	padding: 0;
+.nav-icon svg{
+	margin: auto;
+	fill: white;
+	width: 20px;
+	height: 20px
 }
-svg{
-	fill: var(--color6);
-	width: 30px;
-	height: 30px;
-	background-color: var(--color2);
+.nav-icon svg.active{
+	fill: gold; 
 }
-svg:hover{
-	background-color: var(--color1);
+.nav-text{
+	font-size: 10px;
+	opacity: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	color: gold;
+	transition: opacity 200ms ease-in;
 }
-/*About*/
-#about{
-	background-color: var(--color2);
-	height: 100vh;
-	display: flex;
+.nav-text.hide{
+	opacity: 0;
 }
-#about .content{
-	margin-top: 200px;
-	margin-right: 100px;
-	width: calc(50% - 100px);
+#socbar{
+	display: none;
 }
-#about .content h1{
-	margin: 0;
-	color: var(--color4);	
+#page{
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	border-color: black;
 }
-#about .content h2{
-	color: var(--color4);
+.container{
+	position: relative;
+	width: 100%;
 }
-#about .content p{
-	color: var(--color6);
+.text-area{
+	width: 80%;
+	display: block;
+	position: static;
+	margin-top: 40vw;
+	margin-left: 10%;
 }
-#about .portrait{
-	width: 50%;
+.blast-root{
+	user-select: none;
 }
-/*Services*/
+.blast{
+	display: inline-block;
+}
+.home-page .button{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 5px 10px;
+	color: gold;
+	border: solid 1px gold;
+}
+.home-page .button:hover{
+	color: black;
+	background-color: gold;
+}
+
+.home-page h2{
+	color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: "Open Sans",sans-serif;
+    letter-spacing: 3px;
+}
+
+
+
+@media only screen and (min-width: 580px) {
+	#menubar{
+		display: flex;
+		background-color: black;
+	}
+	#logobar{
+		display: block;
+		width: auto;
+		margin-right: auto;
+	}
+	#logo{
+		color: white;
+		margin: 10px auto 10px;
+	}
+	#hamburger{
+		display: none;
+	}
+	#navbar{
+		text-align: center;
+		margin: auto;
+		background-color: black;
+		opacity: 1;
+	}
+	#navbar a{
+		position: relative;
+		color: white;
+		margin: auto 8px;
+		width: 50px;
+		height: 50px;
+	}
+	#navbar a:first-child{
+		margin-left: auto;
+	}
+	#navbar a:last-child{
+		margin-right: auto;
+	}
+	#socbar{
+		margin: auto;
+		display: flex;
+	}
+	#socbar a{
+		position: relative;
+		margin: auto 4px;
+		width: 24px;
+		height: 50px;
+	}
+	.soc-icon{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	#socbar a svg{
+		width: 12px;
+		margin: auto;
+		fill: white;
+	}
+	#socbar a svg:hover{
+		fill: gold;
+	}
+}
+@media only screen and (min-width: 992px) {
+	#menubar{
+		display: flex;
+		-webkit-flex-direction: column; 
+		flex-direction: column; 
+		float: left;
+		background-color: black;
+		height: 100%;
+		width: 60px;
+	}
+	#logobar{
+		display: block;
+		position: initial;
+		text-align: center;
+		width: 100%;
+		margin: 8px auto;
+		height: 60px;
+	}
+	#navbar{
+		position: initial;
+		display: block;
+		text-align: center;
+		margin: auto 0;
+	}
+	#navbar a{
+		display: block;
+		text-align: center;
+		margin: 8px auto;
+		height: 50px;
+	}
+	#socbar{
+		position: initial;
+		margin: 0;
+		margin-bottom: 20px;
+		display: block;
+	}
+	#socbar a{
+		text-align: center;
+		display: block;
+		position: relative;
+		margin: 4px auto;
+		width: 100%;
+		height: 40px;
+	}
+	#socbar a svg{
+		width: 16px;
+	}
+}
