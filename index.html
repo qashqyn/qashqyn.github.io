@@ -10,10 +10,16 @@
 	<div>
 		<div class="content">
 			<div class="block avatar">
-				<a href="http://qashqyn.github.io/taplink/qashqyn_">
+				<a href="http://qashqyn.github.io">
 					<img src="img/avatar.jpg" class="medium">
 				</a>
 				<p>Qashqyn</p>
+			</div>
+			<div class="row">
+				<div class="block youtube-video">
+					<div class="text" style="display: block;">Taspay - Uki-Vampir</div>
+					<iframe id="UTubeVideo" onload="handleResize()" src="https://www.youtube.com/embed/Gdcks2HTjk4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 			</div>
 			<div class="row">
 				<a href="portfolio/index.html" target="_blank">
@@ -53,4 +59,10 @@
 		</div>
 	</div>
 </body>
+<script>
+	function handleResize(){
+	  	var el = document.getElementById("UTubeVideo");
+	  	el.style.height = (el.offsetWidth * 0.5625) + "px";
+	}
+</script>
 </html>
