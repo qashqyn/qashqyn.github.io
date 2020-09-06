@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>NAVBAR</title>
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/ccc2f42dff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="navbar">
+		<div class="logo"><div id="logo" class="center-hv">LOGO</div></div>
+		<div class="ham" ><i class="fas fa-bars fa-2x center-hv"></i></div>
+
+		<div class="nav">
+			<a href="#home" class="nav-link"><i class="fas fa-home fa-2x"></i><span class="nav-text fade">HOME</span></a>
+			<a href="#about" class="nav-link"><i class="fas fa-user fa-2x"></i><span class="nav-text fade">ABOUT</span></a>
+			<a href="#work" class="nav-link"><i class="fas fa-eye fa-2x"></i><span class="nav-text fade">WORK</span></a>
+			<a href="#contact" class="nav-link"><i class="fas fa-envelope fa-2x"></i><span class="nav-text fade">CONTACT</span></a>
+		</div>
+
+		<div class="socnav">
+			<a href="" class="soc-link"><i class="fab fa-instagram fa-lg center-hv"></i></a>
+			<a href="" class="soc-link"><i class="fab fa-facebook fa-lg center-hv"></i></a>
+			<a href="" class="soc-link"><i class="fab fa-github fa-lg center-hv"></i></a>
+		</div>
+	</div>
+	<script>
+		//Hamburger show-hide
+		var ham = document.querySelector('.ham');
+		var nav = document.querySelector('.nav');
+		ham.addEventListener('click', toggleHam);
+
+		function toggleHam() {
+			nav.classList.toggle('show');
+		}
+
+		//NavLink hover
+		document.querySelectorAll('.nav-link').forEach(i => {
+			i.addEventListener('click', event => {
+				nav.classList.toggle('show');
+			})
+			i.addEventListener('mouseenter', event => {
+				i.querySelector('i').classList.add('fade');
+				i.querySelector('i').style.color = 'gold';
+				i.querySelector('span').classList.remove('fade');
+			})
+			i.addEventListener('mouseleave', event => {
+				i.querySelector('i').classList.remove('fade');
+				i.querySelector('i').style.color = 'white';
+				i.querySelector('span').classList.add('fade');
+			})
+		});
+	</script>
+</body>
+</html>
+
