@@ -1,0 +1,31 @@
+/*body{
+	background-image: url("background.jpg");
+	background-color: gold;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-position: center;
+	background-size: cover;
+}
+*/
+main{
+	background-color: rgba(255 ,255 ,255, .7);
+	height: 100%;
+}
+pre code{
+	color: black;
+	border-left: solid 4px gold;
+}
+
+html-tag{
+	color: brown;
+}
+html-atr{
+	color: red;
+}
+html-content{
+	color: black;
+}
+code a{
+	text-decoration: underline!important;
+	color: inherit!important;
+}
