@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Animated Navbar with CSS and JS</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap 4 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  	<!-- highlight -->
+  	<link rel="stylesheet" href="github.css">
+
+  	<base target="_blank">
+</head>
+<body>
+	<main class="container">
+		<h2 class="text-center">Responsive Animated Navbar with CSS and JS</h2>
+		<h4>Introduction</h4>
+		<p>Hello, today we will create a Responsive and Animated Navbar like on the picture below.</p>
+		<img src="">
+
+		<h4>Creation process</h4>
+		<p>Before we start writing CSS and JS we need to create an <strong>HTML structure</strong>.</p>
+		<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;NAVBAR&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="navbar.css"&gt;
+    &lt;!-- FontAwesome --&gt;
+    &lt;script src="https://kit.fontawesome.com/ccc2f42dff.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Navigation Bar --&gt;
+    &lt;div class="navbar"&gt;
+        &lt;!-- Logotype --&gt;
+        &lt;div class="logo"&gt;&lt;div id="logo" class="center-hv"&gt;LOGO&lt;/div&gt;&lt;/div&gt;
+        &lt;!-- Hamburger --&gt;
+        &lt;div class="ham" &gt;&lt;i class="fas fa-bars fa-2x center-hv"&gt;&lt;/i&gt;&lt;/div&gt;
+        &lt;!-- Navigation Links --&gt;
+        &lt;div class="nav"&gt;
+            &lt;a href="#home" class="nav-link"&gt;
+                &lt;i class="fas fa-home fa-2x"&gt;&lt;/i&gt;
+                &lt;span class="nav-text fade"&gt;HOME&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a href="#about" class="nav-link"&gt;
+                &lt;i class="fas fa-user fa-2x"&gt;&lt;/i&gt;
+                &lt;span class="nav-text fade"&gt;ABOUT&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a href="#work" class="nav-link"&gt;
+                &lt;i class="fas fa-eye fa-2x"&gt;&lt;/i&gt;
+                &lt;span class="nav-text fade"&gt;WORK&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a href="#contact" class="nav-link"&gt;
+                &lt;i class="fas fa-envelope fa-2x"&gt;&lt;/i&gt;
+                &lt;span class="nav-text fade"&gt;CONTACT&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- Social links --&gt;
+        &lt;div class="socnav"&gt;
+            &lt;a href="" class="soc-link"&gt;&lt;i class="fab fa-instagram fa-lg center-hv"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="" class="soc-link"&gt;&lt;i class="fab fa-facebook fa-lg center-hv"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a href="" class="soc-link"&gt;&lt;i class="fab fa-github fa-lg center-hv"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+		<p>Now we have a complete HTML structure with a navbar formed from four parts: logotype, hamburger (menu bar for the mobile platform), navigation links, and social links. <br>As you see, each navigation link has an icon and text inside. They will fade each other on mouse hover.</p>
+        <p>All icons are taken from <a href="https://fontawesome.com"> Font Awesom</a>. You should register before using them. Also, you can use another platform as well. </p>
+        <p>First, we will add CSS for small devices.</p>
+        <pre><code class="css">*{
+    font-family: 'Roboto', sana-serife;
+}
+/*Small devices (phones, less than 768px)*/
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    height: 60px;
+    width: 100%;
+    background-color: grey;
+}
+.logo{
+    position: relative;
+    width: 60px;
+    height: 60px;
+
+    background-color: black;
+    color: white;
+}
+
+.ham{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 60px;
+    width: 60px;
+}
+.nav{
+    display: none;
+    text-align: center;
+    margin: auto; 
+    background-color: gray;
+    padding: 0;
+    height: 60px;
+}
+.nav-link{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 1;
+}
+.nav-link i{
+    color: white;
+}
+.nav-text{
+    color: gold;
+}
+.fade{
+    opacity: 0;
+    color: gold;
+    transition: opacity ease-in .2s;
+}
+.center-hv, .nav-link i, .nav-link span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+.socnav{
+    display: none;
+}
+
+.show{
+    display: block;
+}</code></pre>
+        <p>Let's discuss a little bit.</p>
+        <p>
+            <code class="css"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position: fixed;</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/left">left: 0;</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/top">top: 0;</a></code>
+            With this we will fix our navbar on left-top of screen.
+            <br>
+            <code>position: relative;</code>
+            <br>
+            <code>position: absolute; top: 50%; left: 50%; <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">transform: translate(-50%, -50%);</a></code> With this part of the code, we can center an element horizontally and vertically relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+        </p> 
+        <p>Now, if we open our HTML file in the browser with the attached CSS file, we will see our navbar on top of the screen. The navbar has the only logotype on the left and the menu bar button on the right side.<br>Our navigation links are hidden, click on the hamburger to show them.<br>Did you click the button? Is it working? No? </p>
+        <p>It is all right, button will not work cause we didn't add a script yet.</p>
+        <pre><code class="html">&lt;script&gt;
+    //Hamburger show-hide
+    var ham = document.querySelector('.ham');
+    var nav = document.querySelector('.nav');
+    ham.addEventListener('click', toggleHam);
+
+    function toggleHam() {
+        nav.classList.toggle('show');
+    }
+
+    //NavLink hover
+    document.querySelectorAll('.nav-link').forEach(i =&gt; {
+        i.addEventListener('click', event =&gt; {
+            nav.classList.toggle('show');
+        })
+        i.addEventListener('mouseenter', event =&gt; {
+            i.querySelector('i').classList.add('fade');
+            i.querySelector('i').style.color = 'gold';
+            i.querySelector('span').classList.remove('fade');
+        })
+        i.addEventListener('mouseleave', event =&gt; {
+            i.querySelector('i').classList.remove('fade');
+            i.querySelector('i').style.color = 'white';
+            i.querySelector('span').classList.add('fade');
+        })
+    });
+&lt;/script&gt;</code></pre>
+        <p>We added a few <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventListener">Event Listeners</a> like <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event">click</a>, <a href="">mouseenter</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseleave_event">mouseleave</a>. Now button should work. <br>
+        Also, if you'll position the cursor over one of the navigation link icons, it should fade out and the link's title will appear instead.
+        </p>
+        <pre><code class="css">/*Medium devices (tablets, 768px and up)*/
+@media only screen and (min-width: 768px) {
+    .navbar{
+        display: flex;
+    }
+    .nav{
+        display: block;
+    }
+    .ham{
+        display: none;
+    }
+
+    .socnav{
+        display: block;
+        position: absolute;
+        right: 20px;
+        text-align: center;
+
+        height: 60px;
+
+        margin: auto; 
+    }
+    .soc-link{
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 60px;
+
+        text-decoration: none;
+        color: white;
+
+        font-weight: 300;
+        font-size: 14px;
+    }
+    .soc-link:hover{
+        color: gold;
+    }
+}</code></pre>
+
+<pre><code class="css">/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .navbar{
+        width: 60px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        margin: auto;
+        height: auto;
+    }
+    .socnav{
+        margin: 0;
+        position: initial;
+        width: 60px;
+        height: auto;
+        bottom: 0;
+        right: 0;
+    }
+    .soc-link{
+        width: 60px;
+        height: 40px;
+    }
+}</code></pre>
+
+        
+	</main>
+	<script src="highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
+
