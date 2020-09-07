@@ -88,7 +88,7 @@ body{
 .show{
 	display: block;
 }
-/*
+
 @media only screen and (min-width: 768px) {
 	.navbar{
 		display: flex;
@@ -128,7 +128,7 @@ body{
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-/*@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
 	.navbar{
 		width: 60px;
 		height: 100%;
@@ -151,4 +151,4 @@ body{
 		width: 60px;
 		height: 40px;
 	}
-}*/
+}
